@@ -16,22 +16,23 @@
 
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:paddingLeft="38sp"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="16dp"
             android:layout_weight="1"
+            android:paddingLeft="38sp"
             android:text="Tea Full (Rs 30) "
-            />
+            android:textStyle="bold" />
+
         <TextView
 
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
-            android:text="Tea Cut (Rs 20)"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
             android:paddingLeft="38sp"
-            />
+            android:text="Tea Cut (Rs 20)"
+            android:textStyle="bold" />
     </LinearLayout>
 
 
@@ -45,28 +46,32 @@
             android:layout_weight="1"
             android:layout_height="wrap_content"
             android:paddingLeft="19dp">
+
             <Button
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginBottom="16dp"
-                android:onClick="decrement"
+                android:background="@android:color/holo_green_light"
+                android:onClick="decrementTeaFull"
                 android:text="-" />
 
             <TextView
-                android:id="@+id/quantity_text_view"
+                android:id="@+id/teaFull_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:text="0"
                 android:textColor="#000000"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/plus_button"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:onClick="increment"
+                android:background="@android:color/holo_orange_dark"
+                android:onClick="incrementTeaFull"
                 android:text="+" />
         </LinearLayout>
 
@@ -80,24 +85,27 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginBottom="16dp"
-                android:onClick="decrement"
+                android:onClick="decrementTeaCut"
+                android:background="@android:color/holo_green_light"
                 android:text="-" />
 
             <TextView
-
+                android:id="@+id/teaCut_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:text="0"
                 android:textColor="#000000"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <Button
 
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:onClick="increment"
+                android:onClick="incrementTeaCut"
+                android:background="@android:color/holo_orange_dark"
                 android:text="+" />
         </LinearLayout>
 
@@ -106,26 +114,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <TextView
 
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
             android:paddingLeft="38sp"
-            android:text="Cold Drink (Rs 20)"
-            />
+            android:text="Cold Drink (Rs 30)"
+            android:textStyle="bold" />
+
         <TextView
 
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:paddingLeft="38sp"
             android:text="Fries (Rs 50)"
-            android:paddingLeft="38sp"
-            />
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -144,24 +154,27 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginBottom="16dp"
-                android:onClick="decrement"
+                android:onClick="decrementColdDrinks"
+                android:background="@android:color/holo_green_light"
                 android:text="-" />
 
             <TextView
-
+                android:id="@+id/drinks_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:text="0"
                 android:textColor="#000000"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <Button
 
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:onClick="increment"
+                android:onClick="incrementColdDrinks"
+                android:background="@android:color/holo_orange_dark"
                 android:text="+" />
         </LinearLayout>
 
@@ -175,24 +188,27 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginBottom="16dp"
-                android:onClick="decrement"
+                android:onClick="decrementFries"
+                android:background="@android:color/holo_green_light"
                 android:text="-" />
 
             <TextView
-
+                android:id="@+id/fries_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:text="0"
                 android:textColor="#000000"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <Button
 
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:onClick="increment"
+                android:onClick="incrementFries"
+                android:background="@android:color/holo_orange_dark"
                 android:text="+" />
         </LinearLayout>
 
@@ -203,29 +219,36 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="36dp">
+
         <TextView
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
-            android:text="Price"
+            android:layout_weight="1"
             android:paddingLeft="19dp"
-            android:textAllCaps="true" />
+            android:text="Total Bill"
+            android:textAllCaps="true"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/price_text_view"
-            android:layout_width="0dp"
-            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="0"
 
             android:text="RS 0"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
 
         <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light"
             android:onClick="submitOrder"
             android:text="Total" />
     </LinearLayout>
@@ -243,39 +266,48 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_marginBottom="16dp"
-                android:onClick="decrement"
+                android:onClick="decrementDivide"
+                android:background="@android:color/holo_green_light"
                 android:text="-" />
 
             <TextView
-
+                android:id="@+id/divide_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
-                android:text="0"
+                android:text="1"
                 android:textColor="#000000"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <Button
 
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:onClick="increment"
+                android:onClick="incrementDivide"
+                android:background="@android:color/holo_orange_dark"
                 android:text="+" />
         </LinearLayout>
+
         <TextView
             android:id="@+id/divide_total"
-            android:layout_width="0dp"
-            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="0"
 
             android:text="RS 0"
-            android:textColor="#000000" />
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
         <Button
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
             android:onClick="divide"
             android:text="Divide" />
     </LinearLayout>
